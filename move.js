@@ -6,6 +6,7 @@ function move(element) {
         element.style.bottom = bottom + 'px'
     }
 
+   
     function moveWithArrowKeys(left, bottom, callback){
         let direction = null;
         let x = left;
@@ -33,6 +34,8 @@ function move(element) {
         
         setInterval(moveCharacter, 1)
         
+      
+      
         document.addEventListener('keydown', function(e){
             if(e.repeat) return;
         
@@ -57,6 +60,7 @@ function move(element) {
         })
     }
 
+    
     return {
         to: moveToCoordinates,
         withArrowKeys: moveWithArrowKeys

@@ -16,10 +16,13 @@ function handleDirectionChange(direction){
     if(direction === 'east'){
         character.src = `assets/green-character/east.gif`
     }
+
     if(direction === 'south'){
         character.src = `assets/green-character/south.gif`
     }
 }
+
+
 
 move(character).withArrowKeys(100, 250, handleDirectionChange)
 
